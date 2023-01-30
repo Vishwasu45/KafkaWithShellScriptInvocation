@@ -1,0 +1,11 @@
+version: '3'
+services:
+  study:
+    container_name: vishwas
+    image: postgres:12.3
+    ports:
+      - "32323:5432"
+    environment:
+      - POSTGRES_DB=vishwas-demo
+      - POSTGRES_USER=test
+      - POSTGRES_PASSWORD=test
